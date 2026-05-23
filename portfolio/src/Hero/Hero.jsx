@@ -49,8 +49,10 @@ function Hero() {
                             <div className="flex flex-wrap gap-5 mt-10">
 
                                 {/* Primary Button */}
-                                <button className="relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 text-black font-bold shadow-2xl shadow-purple-500/20 hover:scale-105 transition duration-300">
-                                    View Projects
+                                <button   className="relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 text-black font-bold shadow-2xl shadow-purple-500/20 hover:scale-105 transition duration-300">
+                                    <a href="#projects" className="text-black font-bold">
+                                        View Projects
+                                    </a>
                                 </button>
 
                                 {/* Secondary Button */}
