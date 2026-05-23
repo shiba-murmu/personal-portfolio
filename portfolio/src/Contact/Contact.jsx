@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import PortfolioData from "../Data/PortfolioData";
 export default function Contact() {
     const [copied, setCopied] = useState("");
 
@@ -17,26 +17,26 @@ export default function Contact() {
         {
             id: "email",
             title: "Email",
-            value: "yourmail@example.com",
+            value: PortfolioData.herosection.email,
             icon: "@",
             action: "Send",
-            link: "mailto:yourmail@example.com",
+            link: `mailto:${PortfolioData.herosection.email}`,
         },
         {
             id: "github",
             title: "GitHub",
-            value: "github.com/shiba",
+            value: PortfolioData.herosection.links.github,
             icon: "G",
             action: "Visit",
-            link: "https://github.com/shiba",
+            link: PortfolioData.herosection.links.github,
         },
         {
             id: "linkedin",
             title: "LinkedIn",
-            value: "linkedin.com/in/shiba",
+            value: PortfolioData.herosection.links.linkedin,
             icon: "in",
             action: "Visit",
-            link: "https://linkedin.com/in/shiba",
+            link: PortfolioData.herosection.links.linkedin,
         },
     ];
 
@@ -79,19 +79,19 @@ export default function Contact() {
                 <div className="grid  lg:grid-cols-2 gap-8 lg:gap-10 items-start">
 
                     {/* LEFT SIDE */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 ">
 
                         {/* Profile Card */}
                         <div className="group relative">
 
-                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500/5 to-cyan-400/5 transition duration-500"></div>
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-linear-to-r from-purple-500/5 to-cyan-400/5 transition duration-500"></div>
 
-                            <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
+                            <div className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden ">
 
                                 {/* Header */}
                                 <div className="flex items-center gap-4 sm:gap-5 mb-8">
 
-                                    <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-black text-2xl shadow-2xl shadow-purple-500/20">
+                                    <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-linear-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-black text-2xl shadow-2xl shadow-purple-500/20">
                                         S
                                     </div>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                                         >
 
                                             {/* Glow */}
-                                            <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 bg-gradient-to-r from-purple-500/5 to-cyan-400/5 transition duration-500"></div>
+                                            <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 bg-linear-to-r from-purple-500/5 to-cyan-400/5 transition duration-500"></div>
 
                                             {/* Responsive Layout */}
                                             <div className="relative flex flex-col gap-5">
@@ -131,7 +131,7 @@ export default function Contact() {
                                                 <div className="flex items-center gap-4 min-w-0">
 
                                                     {/* Icon */}
-                                                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-bold shadow-lg shadow-purple-500/20">
+                                                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-linear-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-bold shadow-lg shadow-purple-500/20">
                                                         {item.icon}
                                                     </div>
 
@@ -192,7 +192,7 @@ export default function Contact() {
 
                             <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 opacity-20 blur-sm group-hover:opacity-60 transition duration-500"></div>
 
-                            <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
+                            <div className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
 
@@ -224,7 +224,7 @@ export default function Contact() {
 
                         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500/5 to-cyan-400/5 transition duration-500"></div>
 
-                        <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
+                        <div className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
                             {/* Form Header */}
                             <div className="mb-10">
