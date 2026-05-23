@@ -12,7 +12,8 @@ const PortfolioData = {
         links : {
             linkedin : 'https://linkedin.com/in/shibamurmu',
             github : 'https://github.com/shiba-murmu'
-        }
+        },
+        email : 'shibamurmu001@gmail.com'
     }
 }
 
