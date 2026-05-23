@@ -91,8 +91,8 @@ export default function Contact() {
                                 {/* Header */}
                                 <div className="flex items-center gap-4 sm:gap-5 mb-8">
 
-                                    <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-linear-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-black text-2xl shadow-2xl shadow-purple-500/20">
-                                        S
+                                    <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-black font-black text-2xl shadow-2xl shadow-purple-500/20">
+                                        <img src="/images/profilepicture.webp" className="rounded-2xl" alt="" />
                                     </div>
 
                                     <div className="min-w-0">
