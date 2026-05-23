@@ -110,7 +110,7 @@ export default function Navbar() {
                             ].map((item) => (
                                 <a
                                     key={item}
-                                    href="#"
+                                    href={`#${item.toLowerCase()}`}
                                     onClick={() => setIsOpen(false)}
                                     className="text-gray-300 hover:text-white transition duration-300 text-base border-b border-white/5 pb-4 hover:border-purple-400/40" 
                                 >
