@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PortfolioData from '../Data/PortfolioData'
 function Hero() {
     return (
         <>
@@ -40,33 +40,31 @@ function Hero() {
 
                             {/* Description */}
                             <p className="mt-8 text-gray-400 text-lg leading-relaxed max-w-xl">
-                                I create modern, scalable and visually immersive web
-                                applications with React, Django and AI-powered
-                                technologies focused on performance and user experience.
+                               {PortfolioData.herosection.paragraph}
                             </p>
 
                             {/* Buttons */}
                             <div className="flex flex-wrap gap-5 mt-10">
 
                                 {/* Primary Button */}
-                                <button   className="relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 text-black font-bold shadow-2xl shadow-purple-500/20 hover:scale-105 transition duration-300">
+                                <button   className="relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 text-black font-bold shadow-2xl shadow-purple-500/20 hover:scale-105 transition duration-300 cursor-pointer">
                                     <a href="#projects" className="text-black font-bold">
                                         View Projects
                                     </a>
                                 </button>
 
                                 {/* Secondary Button */}
-                                <button className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white hover:bg-white/10 transition duration-300">
+                                <button className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-white hover:bg-white/10 cursor-pointer transition duration-300">
                                     Download Resume
                                 </button>
                             </div>
 
                             {/* Social Links */}
                             <div className="flex items-center gap-5 mt-12">
-                                {["GitHub", "LinkedIn", "Twitter"].map((item) => (
+                                {["Linkedin", "Github"].map((item) => (
                                     <a
                                         key={item}
-                                        href="#"
+                                        href={PortfolioData.herosection.links[item.toLowerCase()]}
                                         className="text-gray-400 hover:text-cyan-400 transition duration-300"
                                     >
                                         {item}
@@ -115,15 +113,15 @@ function Hero() {
                                             </p>
 
                                             <p className="text-cyan-300 text-sm ml-4">
-                                                name: &quot;Shiba Murmu&quot;,
+                                                name: &quot;{PortfolioData.herosection.name}&quot;,
                                             </p>
 
                                             <p className="text-cyan-300 text-sm ml-4">
-                                                role: &quot;Full Stack Developer&quot;,
+                                                role: &quot;{PortfolioData.herosection.role}&quot;,
                                             </p>
 
                                             <p className="text-cyan-300 text-sm ml-4">
-                                                stack: [&quot;React&quot;, &quot;Django&quot;, &quot;AI&quot;]
+                                                stack: [{PortfolioData.herosection.stack.join(", ")}],
                                             </p>
 
                                             <p className="text-purple-300 text-sm">
@@ -136,7 +134,7 @@ function Hero() {
 
                                             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:-translate-y-1 transition duration-300">
                                                 <p className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                                                    10+
+                                                    {PortfolioData.herosection.projectsBuilt}
                                                 </p>
 
                                                 <p className="text-gray-400 text-sm mt-1">
@@ -146,7 +144,7 @@ function Hero() {
 
                                             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:-translate-y-1 transition duration-300">
                                                 <p className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                                                    React
+                                                    {PortfolioData.herosection.modernFrontend}
                                                 </p>
 
                                                 <p className="text-gray-400 text-sm mt-1">
