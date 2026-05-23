@@ -4,13 +4,13 @@ import { motion } from 'framer-motion'
 function Skills() {
 
     // =========================
-    // PREMIUM ANIMATION SYSTEM
+    // MOBILE OPTIMIZED ANIMATION
     // =========================
 
     const fadeUp = {
         hidden: {
             opacity: 0,
-            y: 100,
+            y: 60,
         },
 
         show: {
@@ -18,7 +18,7 @@ function Skills() {
             y: 0,
 
             transition: {
-                duration: 1.3,
+                duration: 0.9,
                 ease: [0.22, 1, 0.36, 1],
             },
         },
@@ -29,7 +29,7 @@ function Skills() {
 
         show: {
             transition: {
-                staggerChildren: 0.25,
+                staggerChildren: 0.12,
             },
         },
     };
@@ -38,17 +38,17 @@ function Skills() {
         <>
             <section
                 id='skills'
-                className="relative py-32 overflow-hidden bg-[#05010f] text-white"
+                className="relative py-24 sm:py-32 overflow-hidden bg-[#05010f] text-white"
             >
 
                 {/* Background Effects */}
                 <motion.div
                     animate={{
-                        y: [0, -25, 0],
+                        y: [0, -18, 0],
                     }}
 
                     transition={{
-                        duration: 7,
+                        duration: 6,
                         repeat: Infinity,
                         ease: "easeInOut",
                     }}
@@ -58,11 +58,11 @@ function Skills() {
 
                 <motion.div
                     animate={{
-                        y: [0, 25, 0],
+                        y: [0, 18, 0],
                     }}
 
                     transition={{
-                        duration: 8,
+                        duration: 7,
                         repeat: Infinity,
                         ease: "easeInOut",
                     }}
@@ -80,10 +80,10 @@ function Skills() {
 
                     viewport={{
                         once: true,
-                        amount: 0.2,
+                        amount: 0.15,
                     }}
 
-                    className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10"
+                    className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10"
                 >
 
                     {/* ========================= */}
@@ -92,12 +92,12 @@ function Skills() {
 
                     <motion.div
                         variants={fadeUp}
-                        className="text-center mb-20"
+                        className="text-center mb-16 sm:mb-20"
                     >
 
                         <motion.p
                             variants={fadeUp}
-                            className="text-cyan-400 uppercase tracking-[0.3em] text-sm mb-4"
+                            className="text-cyan-400 uppercase tracking-[0.3em] text-xs sm:text-sm mb-4"
                         >
                             My Expertise
                         </motion.p>
@@ -105,7 +105,7 @@ function Skills() {
                         <motion.h2
                             initial={{
                                 opacity: 0,
-                                y: 100,
+                                y: 60,
                             }}
 
                             whileInView={{
@@ -114,13 +114,13 @@ function Skills() {
                             }}
 
                             transition={{
-                                duration: 1.5,
+                                duration: 1,
                                 ease: [0.22, 1, 0.36, 1],
                             }}
 
                             viewport={{
                                 once: true,
-                                amount: 0.3,
+                                amount: 0.2,
                             }}
 
                             className="text-4xl md:text-5xl font-black leading-tight"
@@ -136,7 +136,7 @@ function Skills() {
 
                         <motion.p
                             variants={fadeUp}
-                            className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed"
+                            className="mt-6 text-gray-400 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed"
                         >
                             A modern stack focused on building scalable, performant
                             and immersive digital experiences.
@@ -149,19 +149,16 @@ function Skills() {
 
                     <div className="grid lg:grid-cols-2 gap-8">
 
-                        {/* ========================= */}
                         {/* FRONTEND */}
-                        {/* ========================= */}
-
                         <motion.div
                             variants={fadeUp}
 
                             whileHover={{
-                                y: -10,
+                                y: -6,
                             }}
 
                             transition={{
-                                duration: 0.4,
+                                duration: 0.3,
                             }}
 
                             className="group relative"
@@ -169,23 +166,23 @@ function Skills() {
 
                             <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 opacity-30 blur-sm group-hover:opacity-70 transition duration-500"></div>
 
-                            <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-8 overflow-hidden">
+                            <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
-                                <div className="flex items-center justify-between mb-8">
+                                <div className="flex items-center justify-between mb-8 gap-4">
 
                                     <div>
-                                        <h3 className="text-2xl font-bold">
+                                        <h3 className="text-xl sm:text-2xl font-bold">
                                             Frontend Development
                                         </h3>
 
-                                        <p className="text-gray-400 mt-2">
+                                        <p className="text-gray-400 mt-2 text-sm sm:text-base">
                                             Modern UI engineering & interaction design
                                         </p>
                                     </div>
 
                                     <motion.div
                                         animate={{
-                                            y: [0, -6, 0],
+                                            y: [0, -5, 0],
                                         }}
 
                                         transition={{
@@ -194,7 +191,7 @@ function Skills() {
                                             ease: "easeInOut",
                                         }}
 
-                                        className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-black shadow-lg shadow-purple-500/20"
+                                        className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-black shadow-lg shadow-purple-500/20"
                                     >
                                         FE
                                     </motion.div>
@@ -204,7 +201,7 @@ function Skills() {
                                 {/* Skills */}
                                 <motion.div
                                     variants={staggerContainer}
-                                    className="flex flex-wrap gap-4"
+                                    className="flex flex-wrap gap-3 sm:gap-4"
                                 >
 
                                     {[
@@ -224,11 +221,15 @@ function Skills() {
                                             variants={fadeUp}
 
                                             whileHover={{
-                                                y: -6,
-                                                scale: 1.05,
+                                                y: -4,
+                                                scale: 1.02,
                                             }}
 
-                                            className="px-5 py-3 rounded-2xl border border-white/10 bg-black/30 text-gray-300 hover:text-white hover:border-purple-400/40 hover:bg-white/10 transition duration-300 cursor-pointer"
+                                            transition={{
+                                                duration: 0.25,
+                                            }}
+
+                                            className="px-4 py-3 rounded-2xl border border-white/10 bg-black/30 text-gray-300 hover:text-white hover:border-purple-400/40 hover:bg-white/10 transition duration-300 cursor-pointer text-sm sm:text-base"
                                         >
                                             {skill}
                                         </motion.div>
@@ -237,19 +238,16 @@ function Skills() {
                             </div>
                         </motion.div>
 
-                        {/* ========================= */}
                         {/* BACKEND */}
-                        {/* ========================= */}
-
                         <motion.div
                             variants={fadeUp}
 
                             whileHover={{
-                                y: -10,
+                                y: -6,
                             }}
 
                             transition={{
-                                duration: 0.4,
+                                duration: 0.3,
                             }}
 
                             className="group relative"
@@ -257,23 +255,23 @@ function Skills() {
 
                             <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 opacity-30 blur-sm group-hover:opacity-70 transition duration-500"></div>
 
-                            <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-8 overflow-hidden">
+                            <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
-                                <div className="flex items-center justify-between mb-8">
+                                <div className="flex items-center justify-between mb-8 gap-4">
 
                                     <div>
-                                        <h3 className="text-2xl font-bold">
+                                        <h3 className="text-xl sm:text-2xl font-bold">
                                             Backend Development
                                         </h3>
 
-                                        <p className="text-gray-400 mt-2">
+                                        <p className="text-gray-400 mt-2 text-sm sm:text-base">
                                             APIs, authentication & scalable architecture
                                         </p>
                                     </div>
 
                                     <motion.div
                                         animate={{
-                                            y: [0, -6, 0],
+                                            y: [0, -5, 0],
                                         }}
 
                                         transition={{
@@ -282,7 +280,7 @@ function Skills() {
                                             ease: "easeInOut",
                                         }}
 
-                                        className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-black shadow-lg shadow-purple-500/20"
+                                        className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-cyan-400 flex items-center justify-center text-black font-black shadow-lg shadow-purple-500/20"
                                     >
                                         BE
                                     </motion.div>
@@ -291,7 +289,7 @@ function Skills() {
 
                                 <motion.div
                                     variants={staggerContainer}
-                                    className="flex flex-wrap gap-4"
+                                    className="flex flex-wrap gap-3 sm:gap-4"
                                 >
 
                                     {[
@@ -311,11 +309,15 @@ function Skills() {
                                             variants={fadeUp}
 
                                             whileHover={{
-                                                y: -6,
-                                                scale: 1.05,
+                                                y: -4,
+                                                scale: 1.02,
                                             }}
 
-                                            className="px-5 py-3 rounded-2xl border border-white/10 bg-black/30 text-gray-300 hover:text-white hover:border-cyan-400/40 hover:bg-white/10 transition duration-300 cursor-pointer"
+                                            transition={{
+                                                duration: 0.25,
+                                            }}
+
+                                            className="px-4 py-3 rounded-2xl border border-white/10 bg-black/30 text-gray-300 hover:text-white hover:border-cyan-400/40 hover:bg-white/10 transition duration-300 cursor-pointer text-sm sm:text-base"
                                         >
                                             {skill}
                                         </motion.div>
@@ -324,19 +326,16 @@ function Skills() {
                             </div>
                         </motion.div>
 
-                        {/* ========================= */}
                         {/* AI SECTION */}
-                        {/* ========================= */}
-
                         <motion.div
                             variants={fadeUp}
 
                             whileHover={{
-                                y: -10,
+                                y: -6,
                             }}
 
                             transition={{
-                                duration: 0.5,
+                                duration: 0.3,
                             }}
 
                             className="group relative lg:col-span-2"
@@ -346,7 +345,7 @@ function Skills() {
 
                             <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
-                                <div className="grid lg:grid-cols-2 gap-14 items-center">
+                                <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
                                     {/* LEFT */}
                                     <motion.div
@@ -376,12 +375,12 @@ function Skills() {
 
                                         <motion.button
                                             whileHover={{
-                                                scale: 1.05,
+                                                scale: 1.03,
                                                 y: -2,
                                             }}
 
                                             whileTap={{
-                                                scale: 0.95,
+                                                scale: 0.96,
                                             }}
 
                                             className="mt-8 w-full sm:w-fit px-7 py-4 rounded-2xl bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 text-black font-bold shadow-xl shadow-purple-500/20"
@@ -393,7 +392,7 @@ function Skills() {
                                     {/* RIGHT CARDS */}
                                     <motion.div
                                         variants={staggerContainer}
-                                        className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-4 lg:mt-0"
+                                        className="grid grid-cols-1 sm:grid-cols-2 gap-5"
                                     >
 
                                         {[
@@ -409,12 +408,12 @@ function Skills() {
                                                 variants={fadeUp}
 
                                                 whileHover={{
-                                                    y: -10,
-                                                    scale: 1.03,
+                                                    y: -6,
+                                                    scale: 1.02,
                                                 }}
 
                                                 transition={{
-                                                    duration: 0.4,
+                                                    duration: 0.25,
                                                 }}
 
                                                 className="group/card rounded-3xl border border-white/10 bg-black/30 backdrop-blur-xl p-6 hover:border-purple-400/40 transition duration-300"
@@ -423,7 +422,7 @@ function Skills() {
                                                 {/* Icon */}
                                                 <motion.div
                                                     animate={{
-                                                        y: [0, -6, 0],
+                                                        y: [0, -5, 0],
                                                     }}
 
                                                     transition={{
