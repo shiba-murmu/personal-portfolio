@@ -1,8 +1,17 @@
 import React from 'react'
-
+import Navbar from './Navbar/Navbar'
 function App() {
   return (
-    <div>App</div>
+    <>
+    <Navbar />
+    Hero section <br />
+    skills <br />
+    projects <br />
+    experience / educations <br />
+    resume <br />
+    contact <br />
+    footer
+    </>
   )
 }
 
