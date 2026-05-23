@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import PortfolioData from "../Data/PortfolioData";
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -21,10 +21,10 @@ export default function Navbar() {
 
                             <div>
                                 <h1 className="text-white font-bold text-lg tracking-wide">
-                                    Shiba Murmu
+                                    {PortfolioData.herosection.name}
                                 </h1>
                                 <p className="text-xs text-gray-400 tracking-[0.2em] uppercase">
-                                    Developer Portfolio
+                                    {PortfolioData.herosection.passion}
                                 </p>
                             </div>
                         </div>
