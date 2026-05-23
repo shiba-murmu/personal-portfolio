@@ -76,7 +76,7 @@ export default function Contact() {
                 </div>
 
                 {/* Main Grid */}
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+                <div className="grid  lg:grid-cols-2 gap-8 lg:gap-10 items-start">
 
                     {/* LEFT SIDE */}
                     <div className="space-y-6">
@@ -84,7 +84,7 @@ export default function Contact() {
                         {/* Profile Card */}
                         <div className="group relative">
 
-                            <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 opacity-20 blur-sm group-hover:opacity-60 transition duration-500"></div>
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500/5 to-cyan-400/5 transition duration-500"></div>
 
                             <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
@@ -222,7 +222,7 @@ export default function Contact() {
                     {/* RIGHT SIDE */}
                     <div className="group relative">
 
-                        <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 opacity-20 blur-sm group-hover:opacity-60 transition duration-500"></div>
+                        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-purple-500/5 to-cyan-400/5 transition duration-500"></div>
 
                         <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
