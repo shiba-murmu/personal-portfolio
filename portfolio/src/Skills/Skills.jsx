@@ -128,7 +128,7 @@ function Skills() {
                         {/* AI Section */}
                         {/* AI Section */}
                         <div className="group relative lg:col-span-2">
-                            <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-cyan-400 opacity-30 blur-sm group-hover:opacity-70 transition duration-500"></div>
+                            <div className="absolute "></div>
 
                             <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-6 sm:p-8 overflow-hidden">
 
