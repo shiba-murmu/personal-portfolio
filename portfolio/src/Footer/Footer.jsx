@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PortfolioData from '../Data/PortfolioData'
 function Footer() {
     return (
         <>
@@ -30,11 +30,11 @@ function Footer() {
 
                                 <div>
                                     <h2 className="text-2xl font-black">
-                                        Shiba Murmu
+                                        {PortfolioData.herosection.name}
                                     </h2>
 
                                     <p className="text-cyan-400 text-sm mt-1">
-                                        Full Stack Developer
+                                        {PortfolioData.herosection.role}
                                     </p>
                                 </div>
                             </div>
@@ -105,18 +105,18 @@ function Footer() {
                                     {
                                         name: "GitHub",
                                         icon: "G",
-                                        link: "https://github.com/shiba",
+                                        link: PortfolioData.herosection.links.github,
                                     },
                                     {
                                         name: "LinkedIn",
                                         icon: "in",
-                                        link: "https://linkedin.com/in/shiba",
+                                        link: PortfolioData.herosection.links.linkedin,
                                     },
-                                    {
-                                        name: "Twitter",
-                                        icon: "X",
-                                        link: "https://twitter.com",
-                                    },
+                                    // {
+                                    //     name: "Twitter",
+                                    //     icon: "X",
+                                    //     link: "https://twitter.com",
+                                    // },
                                 ].map((item) => (
                                     <a
                                         key={item.name}
